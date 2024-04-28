@@ -1,0 +1,8 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+chemistry,ARC-v1
+no-bam,true
+
+[libraries]
+fastq_id,fastqs,feature_types
+bamtofastq,/data/gpfs-1/users/knighto_c/scratch/ngs/IPS/fastq/fastq_GEX/Multiome_Burkhardt_NeurIPS_2022_S02D04_GEX/libraries_neurips_site2_donor4_0_1_HG2YYDSX2/,Gene Expression
