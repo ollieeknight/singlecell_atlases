@@ -29,7 +29,7 @@ for library_directory in "$base_dir"/CITE*/; do
     {
         echo "[gene-expression]"
         echo "reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc"
-	echo "no-bam,true"
+	echo "create-bam,false"
         echo ""
         echo "[feature]"
         echo "reference,/fast/scratch/users/knighto_c/ngs/IPS/IPS_scripts/ADT_list.csv"
@@ -70,7 +70,7 @@ for library_directory in "$base_dir"/Multiome*/; do
         echo "[gene-expression]"
         echo "reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc"
         echo "chemistry,ARC-v1"
-        echo "no-bam,true"
+        echo "create-bam,false"
         echo ""
 	echo "[libraries]"
         echo "fastq_id,fastqs,feature_types"
