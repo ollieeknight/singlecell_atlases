@@ -9,6 +9,12 @@ for library_csv in "${project_dir}/BMMC_scripts/libraries/"*; do
     library_id=$(basename "${library_csv%.*}")
     output_file="${project_dir}/BMMC_outs/${library_id}/cellbender/output_posterior.h5"
 
+    # Check if the $library_id/outs directory exists
+    if [ ! -d "${project_dir}/BMMC_outs/${library_id}/outs" ]; then
+        echo "Directory ${library_id}/outs does not exist, skipping"
+        continue
+    fi
+
     # Check if the output file already exists
     if [ -f "$output_file" ]; then
         echo "Output file exists for ${library_id}, skipping"
@@ -26,8 +32,8 @@ for library_csv in "${project_dir}/BMMC_scripts/libraries/"*; do
 #SBATCH --partition "gpu"
 #SBATCH --gres gpu:1
 #SBATCH --cpus-per-task 16
-#SBATCH --mem 64000
-#SBATCH --time 12:00:00
+#SBATCH --mem 200000
+#SBATCH --time 24:00:00
 cd "${project_dir}/BMMC_outs/${library_id}"
 mkdir -p cellbender
 container="/fast/scratch/users/knighto_c/tmp/oscar-qc_latest.sif"

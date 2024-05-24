@@ -1,9 +1,11 @@
 #!/bin/bash
 
-base_dir="/data/gpfs-1/users/knighto_c/scratch/ngs/IPS/fastq/fastq_GEX"
+project_id='IPS'
+
+workingdir="$HOME/scratch/ngs/${project_id}"
 
 # Define the directory path
-libraries_dir="$HOME/scratch/ngs/IPS/IPS_scripts/libraries/"
+libraries_dir="$HOME/scratch/ngs/${project_id}/${project_id}_scripts/libraries/"
 
 # Check if the directory exists
 if [ -d "$libraries_dir" ]; then

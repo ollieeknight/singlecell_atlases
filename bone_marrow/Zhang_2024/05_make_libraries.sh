@@ -38,14 +38,7 @@ while IFS=',' read -r SRR GSM sample_name modality chemistry lane ethnicity muta
         echo "Creating new library file: ${library_output}"  # Debugging: Print library creation
         echo "[gene-expression]" > "${library_output}"
         echo "reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc" >> "${library_output}"
-        echo "create-bam,false" >> "${library_output}"
-#        if [ "$chemistry" == "SC3Pv3" ]; then
-#            echo "chemistry,${chemistry}" >> "${library_output}"
-#        elif [ "$chemistry" == "SC3Pv3HT" ]; then
-#            echo "chemistry,${chemistry}" >> "${library_output}"
-#        elif [ "$chemistry" == "ADT" ] || [ "$chemistry" == "HTO" ]; then
-#            continue
-#        fi
+        echo "create-bam,true" >> "${library_output}"
         echo "" >> "${library_output}"
         echo "[feature]" >> "${library_output}"
         echo "reference,$HOME/scratch/ngs/BMMC/BMMC_scripts/full_ADT_list.csv" >> "${library_output}"
