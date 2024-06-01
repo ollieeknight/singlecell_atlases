@@ -1,0 +1,14 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,false
+no-secondary,true
+r1-length,26
+
+[feature]
+reference,/data/gpfs-1/users/knighto_c/scratch/ngs/amp_zhang_2023/scripts/AMP_ADT_list.csv
+r1-length,26
+
+[libraries]
+fastq_id,fastqs,feature_types
+BRI-521,/data/gpfs-1/scratch/users/knighto_c/ngs/amp_zhang_2023/fastq/gex,Gene Expression
+BRI_522,/data/gpfs-1/scratch/users/knighto_c/ngs/amp_zhang_2023/fastq/adt,Antibody Capture

@@ -1,0 +1,11 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,false
+
+[feature]
+reference,/data/gpfs-1/users/knighto_c/scratch/ngs/burkhardt_2022/scripts/titrated_ADT_list.csv
+
+[libraries]
+fastq_id,fastqs,feature_types
+bamtofastq,/data/gpfs-1/users/knighto_c/scratch/ngs/burkhardt_2022/fastq/CITE_Burkhardt_NeurIPS_2022_S02_D01_CITE/site2_donor1_0_1_HFYF3DSX2/,Antibody Capture
+bamtofastq,/data/gpfs-1/users/knighto_c/scratch/ngs/burkhardt_2022/fastq/CITE_Burkhardt_NeurIPS_2022_S02_D01_CITE/site2_donor1_1_1_HFYF3DSX2/,Gene Expression
