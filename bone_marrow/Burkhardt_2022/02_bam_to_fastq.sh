@@ -1,21 +1,15 @@
 #!/bin/bash
 
-project_id='burkhardt_2022'
+project_id='IPS'
 
 project_dir="$HOME/scratch/ngs/${project_id}"
 
+# Create directories for logs
 mkdir -p "${project_dir}/fastq/logs/"
 
 # Process BAM files in the GEX directory
 for bam in "${project_dir}/bam/"*.bam; do
     filename=$(basename "${bam}" .bam)
-    output_folder="${project_dir}/fastq/${filename}"
-
-    # Check if the output file already exists
-    if [ -d "$output_folder" ]; then
-        echo "Output folder exists for ${bam}, skipping"
-        continue
-    fi
 
     sbatch <<EOF
 #!/bin/bash
@@ -26,6 +20,6 @@ for bam in "${project_dir}/bam/"*.bam; do
 #SBATCH --mem=32000
 #SBATCH --time=8:00:00
 cd "${project_dir}"
-${HOME}/group/work/bin/cellranger-8.0.0/lib/bin/bamtofastq --nthreads 16 "${bam}" "${project_dir}/fastq/${filename}/"
+${HOME}/group/work/bin/cellranger-7.2.0/lib/bin/bamtofastq --nthreads 16 "${bam}" "${project_dir}/fastq/${filename}/"
 EOF
 done
