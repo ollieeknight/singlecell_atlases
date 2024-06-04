@@ -1,0 +1,86 @@
+donor_id,pipeline_date,site,disease,treatment,biopsied,sex,age,CDAI,disease_duration,tissue_type,krenn_lining,krenn_inflammation,GEX_library_number,ADT_library_number,ATAC_library_number,DAS28_CRP,DAS28_ESR,CCP
+301-0267,43683,University of Pittsburgh,Osteoarthritis,Ongoing,Knee,Female,70,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-399,BRI_400,BRI-448,Unknown,Unknown,Unknown
+300-0302,43683,Cedars,Naive,Ongoing,Knee,Female,77,15,2.1,Biopsy,1.67,2.33,BRI-401,BRI_402,NA,1,3.1,52
+300-0150,43683,University of Rochester,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,28,22,1.5,Synovectomy,0.67,2.67,BRI-403,BRI_404,BRI-449,1.9,4.3,170
+300-0310,43683,Cedars,Rheumatoid arthritis,TNF failure,Wrist,Female,62,24.5,16,Biopsy,0,0.33,BRI-405,BRI_406,NA,1.1,3,250
+300-2663,43683,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,44,40,6.9,Biopsy,1.33,3,BRI-407,BRI_408,NA,2.1,4.9,189
+300-0460,43683,Northwestern,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,68,11,3.8,Biopsy,1,3,BRI-409,BRI_410,NA,Unknown,3,201
+300-0309,43689,Cedars,Rheumatoid arthritis,TNF failure,Wrist,Female,68,36,15.3,Biopsy,0,0.67,BRI-411,BRI_412,NA,4.2,3.8,250
+300-0143,43689,University of Rochester,Naive,Ongoing,Knee,Female,73,58,0,Biopsy,1,1,BRI-413,BRI_414,NA,4.2,7,251
+300-1933,43689,UK London,Naive,Ongoing,Knee,Female,30,18.3,0,Biopsy,1.33,2.67,BRI-415,BRI_416,NA,Unknown,Unknown,Unknown
+300-0228,43689,University of Colorado,Rheumatoid arthritis,Methotrexate failure,Knee,Female,35,26.5,16.4,Biopsy,0.67,1,BRI-417,BRI_418,NA,2.8,4.1,7
+300-2669,43689,Columbia University,Naive,Ongoing,Wrist,Female,42,25.5,1.6,Biopsy,1,1.67,BRI-419,BRI_420,NA,2,4.6,11
+300-0501,43689,UK Birmingham,Naive,Ongoing,Knee,Female,56,14.2,0,Biopsy,1.33,2.33,BRI-421,BRI_422,NA,Unknown,3.4,341
+300-0408,43690,UC San Diego,Rheumatoid arthritis,Methotrexate failure,Knee,Female,57,28.2,0.7,Biopsy,1,1,BRI-425,BRI_426,NA,Unknown,Unknown,200
+300-0414,43690,UC San Diego,Rheumatoid arthritis,TNF failure,Knee,Female,65,36.7,0.1,Biopsy,1,0.33,BRI-427,BRI_428,BRI-450,2.4,5.8,317
+300-2662,43690,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,68,59.5,10.2,Biopsy,0.33,0.33,BRI-429,BRI_430,NA,3.5,7,6
+300-0453,43690,Northwestern,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,23,18,2.5,Biopsy,1,1,BRI-431,BRI_432,NA,Unknown,Unknown,201
+300-0223,43692,University of Colorado,Naive,Ongoing,Wrist,Female,56,36,4,Biopsy,1.33,3,BRI-436,BRI_437,NA,2.6,5.6,89
+301-0269,43692,University of Pittsburgh,Osteoarthritis,Ongoing,Knee,Female,62,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-438,BRI_439,NA,Unknown,Unknown,Unknown
+300-1934,43692,UK London,Naive,Ongoing,Wrist,Male,39,39.4,0,Biopsy,1.33,2.33,BRI-440,BRI_441,NA,3.3,4.1,337
+301-0168,43692,Hospital for Special Surgery,Osteoarthritis,Ongoing,Ankle,Male,63,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-442,BRI_443,BRI-645,Unknown,Unknown,Unknown
+301-1470,43699,University of Pittsburgh,Osteoarthritis,Ongoing,Knee,Male,63,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-456,BRI_457,NA,Unknown,Unknown,Unknown
+300-2666,43699,Columbia University,Naive,Ongoing,Wrist,Female,81,46,38.3,Biopsy,1.33,3,BRI-458,BRI_459,BRI-646,3,6.3,49
+300-0173,43699,Hospital for Special Surgery,Naive,Ongoing,Wrist,Female,66,10.5,1.8,Synovectomy,0.33,2.33,BRI-460,BRI_461,BRI-545,3.6,1.7,158
+300-1930,43699,UK London,Naive,Ongoing,Knee,Female,68,28.3,0,Biopsy,1.67,2.33,BRI-462,BRI_463,BRI-546,2.5,3.8,1.7
+300-0531,43703,UK London,Naive,Ongoing,Knee,Female,36,19.9,0,Biopsy,1.33,1.33,BRI-475,BRI_476,NA,2.2,5.1,2.9
+301-1468,43703,University of Pittsburgh,Osteoarthritis,Ongoing,Knee,Female,63,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-477,BRI_478,NA,Unknown,Unknown,Unknown
+300-0174,43703,Hospital for Special Surgery,Rheumatoid arthritis,TNF failure,Wrist,Female,80,21,23.2,Synovectomy,1,2.67,BRI-479,BRI_480,BRI-547,0.9,4.6,251
+300-0413,43704,UC San Diego,Rheumatoid arthritis,Methotrexate failure,Knee,Female,27,25.6,7.9,Biopsy,2,1.5,BRI-481,BRI_482,NA,Unknown,Unknown,209
+300-1929,43704,UK London,Naive,Ongoing,MCP,Female,55,39.9,0,Biopsy,1,1,BRI-483,BRI_484,NA,2.4,6.2,1.8
+300-0489,43704,UK Birmingham,Rheumatoid arthritis,Methotrexate failure,Knee,Male,77,54.5,7,Biopsy,2,3,BRI-485,BRI_486,NA,5.7,6.2,251
+301-0166,43704,Hospital for Special Surgery,Osteoarthritis,Osteoarthritis,Knee,Female,72,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-487,BRI_488,NA,Unknown,Unknown,Unknown
+300-0502,43724,UK Birmingham,Naive,Ongoing,Knee,Male,45,13,0,Biopsy,0,0.67,BRI-503,BRI_504,NA,1.2,Unknown,341
+300-0392,43724,UC San Diego,Rheumatoid arthritis,TNF failure,Knee,Female,61,17,19.4,Biopsy,1.67,2.67,BRI-505,BRI_506,BRI-542,1.9,4,1119
+300-0488,43724,UK Birmingham,Rheumatoid arthritis,TNF failure,Knee,Female,51,35.8,4.1,Biopsy,1,2.33,BRI-507,BRI_508,NA,2.7,3.6,91
+300-2660,43724,Columbia University,Naive,Ongoing,Wrist,Male,63,74.5,0.1,Biopsy,Unknown,1,BRI-509,BRI_510,NA,6.3,7.9,195
+300-2665,43725,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,44,55,0.3,Biopsy,1,0.67,BRI-511,BRI_512,NA,3.2,6.1,13
+300-0504,43725,UK Birmingham,Naive,Ongoing,Ankle,Female,54,16.5,0.1,Biopsy,0.67,1.67,BRI-515,BRI_516,NA,Unknown,3.7,247
+301-0268,43725,University of Pittsburgh,Osteoarthritis,Ongoing,Knee,Male,72,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-517,BRI_518,NA,Unknown,Unknown,Unknown
+300-0301,43727,Cedars,Rheumatoid arthritis,TNF failure,Knee,Male,64,22,9.8,Biopsy,1,1.67,BRI-521,BRI_522,NA,2.4,4.2,0
+301-0266,43727,University of Pittsburgh,Osteoarthritis,Ongoing,Knee,Female,83,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-523,BRI_524,BRI-543,Unknown,Unknown,Unknown
+300-0175,43727,Hospital for Special Surgery,Rheumatoid arthritis,TNF failure,Wrist,Female,69,12,20.2,Synovectomy,1.33,1,BRI-525,BRI_526,BRI-544,1.4,3.8,171.6
+300-0221,43727,University of Colorado,Naive,Ongoing,Wrist,Male,70,33,0,Biopsy,1,1.67,BRI-527,BRI_528,NA,5.1,5.1,200
+300-0496,43727,UK Birmingham,Rheumatoid arthritis,Methotrexate failure,Knee,Female,69,14.2,0.7,Biopsy,1.67,1.67,BRI-529,BRI_530,NA,1.1,3.5,1
+300-2671,43731,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Male,61,27.5,10.2,Biopsy,1,0,BRI-534,BRI_535,NA,1.1,4.1,156
+300-0226,43731,University of Colorado,Naive,Ongoing,Wrist,Male,41,15,0,Biopsy,1.67,2.67,BRI-536,BRI_537,NA,0.9,3,23
+300-0491,43731,UK Birmingham,Rheumatoid arthritis,Methotrexate failure,Knee,Female,66,47.6,1.8,Biopsy,2,3,BRI-538,BRI_539,NA,5.2,6,203
+300-0307,43731,Cedars,Rheumatoid arthritis,TNF failure,Wrist,Male,55,16.5,1.9,Biopsy,1.33,2,BRI-540,BRI_541,NA,2.3,2.5,200
+300-0507,43738,UK Birmingham,Naive,Ongoing,Knee,Female,30,57.4,0,Biopsy,1,3,BRI-542,BRI_543,NA,5.5,7,273
+300-2651,43738,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,58,27,2,Biopsy,0.33,1.67,BRI-544,BRI_545,NA,3.6,5.4,196
+300-0144,43738,University of Rochester,Rheumatoid arthritis,Methotrexate failure,MCP,Female,60,41,12.7,Biopsy,1.33,1.67,BRI-546,BRI_547,NA,3.1,Unknown,174
+300-2600,43738,UAB,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,44,38,0.1,Biopsy,1,2.33,BRI-548,BRI_549,NA,5.5,Unknown,195
+300-0172,43738,Hospital for Special Surgery,Naive,Ongoing,MTP,Female,59,23,23.9,Synovectomy,1,1,BRI-550,BRI_551,BRI-647,1,3.2,251
+300-0183,43739,Feinstein Institute,Rheumatoid arthritis,TNF failure,Knee,Male,67,26,26.9,Biopsy,0.67,1,BRI-552,BRI_553,NA,0.8,3.2,18
+300-0529,43739,UK London,Naive,Ongoing,MTP 2,Male,62,37,0.1,Biopsy,0.67,1.67,BRI-554,BRI_555,NA,2.4,5.5,251
+300-0171,43739,Hospital for Special Surgery,Rheumatoid arthritis,Methotrexate failure,MCP,Female,72,23,40.9,Synovectomy,2,2.67,BRI-556,BRI_557,BRI-639,-0.2,2.4,251
+300-2668,43739,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,52,66,22.4,Biopsy,0,0,BRI-558,BRI_559,NA,4.3,6.7,228
+300-0149,43739,University of Rochester,Rheumatoid arthritis,TNF failure,Knee,Male,67,59,8.2,Biopsy,1,2.67,BRI-560,BRI_561,NA,5,7.1,251
+300-0532,43741,UK London,Naive,Ongoing,Knee,Female,75,22.8,0,Biopsy,2,2,BRI-562,BRI_563,NA,2.1,4.7,1.8
+300-2658,43741,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Male,68,34,0.4,Biopsy,1,1.33,BRI-564,BRI_565,NA,2.4,5.1,3
+300-0416,43741,UC San Diego,Naive,Ongoing,Knee,Female,64,37.2,0.3,Biopsy,0.67,2,BRI-566,BRI_567,BRI-640,Unknown,Unknown,251
+300-0176,43741,Hospital for Special Surgery,Naive,Ongoing,Wrist,Male,67,45.5,0.1,Biopsy,1,1.67,BRI-570,BRI_571,NA,3.9,5.5,0.1
+300-2601,43755,UAB,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,51,43,0.3,Biopsy,Unknown,Unknown,BRI-581,BRI_582,NA,Unknown,Unknown,251
+300-0410,43755,UC San Diego,Rheumatoid arthritis,Methotrexate failure,Knee,Female,43,64,0,Biopsy,1,2,BRI-583,BRI_584,BRI-641,Unknown,Unknown,287
+300-1881,43755,UK Birmingham,Rheumatoid arthritis,Methotrexate failure,Knee,Female,30,57.4,0.5,Biopsy,1,2.67,BRI-585,BRI_586,NA,3.9,6.3,251
+301-0169,43755,Hospital for Special Surgery,Osteoarthritis,Osteoarthritis,Knee,Female,71,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-587,BRI_588,BRI-642,Unknown,Unknown,Unknown
+300-0145,43755,University of Rochester,Rheumatoid arthritis,TNF failure,MCP,Female,67,42,5.5,Biopsy,1.33,1,BRI-589,BRI_590,NA,2.8,Unknown,251
+300-0506,43759,UK Birmingham,Naive,Ongoing,Ankle,Male,61,27.8,0,Biopsy,1,1.67,BRI-601,BRI_602,NA,Unknown,5.4,251
+300-2657,43759,Columbia University,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,75,57,4.1,Biopsy,0.67,0.67,BRI-603,BRI_604,NA,5,7,219
+300-1883,43759,UK Birmingham,Naive,Ongoing,Knee,Female,73,18,0,Biopsy,Unknown,Unknown,BRI-605,BRI_606,BRI-643,1.9,3.4,340
+300-0411,43759,UC San Diego,Rheumatoid arthritis,TNF failure,Knee,Female,52,18.5,9.6,Biopsy,1,0.67,BRI-607,BRI_608,NA,Unknown,Unknown,201
+301-1469,43759,University of Pittsburgh,Osteoarthritis,Ongoing,Hip,Female,63,Unknown,Unknown,Arthroplasty,Unknown,Unknown,BRI-609,BRI_610,NA,Unknown,Unknown,Unknown
+300-0151,43760,University of Rochester,Rheumatoid arthritis,Methotrexate failure,MCP,Female,50,48,5,Biopsy,0.67,1.33,BRI-611,BRI_612,NA,2,6.4,92
+300-0235,43760,University of Colorado,Rheumatoid arthritis,TNF failure,Wrist,Female,70,29.5,0.1,Biopsy,0.33,1.67,BRI-613,BRI_614,NA,3.7,5.2,171.5
+300-0415,43760,UC San Diego,Rheumatoid arthritis,TNF failure,Knee,Female,60,33.4,0.3,Biopsy,1,1.33,BRI-615,BRI_616,BRI-644,Unknown,Unknown,Unknown
+300-0417,43760,UC San Diego,Rheumatoid arthritis,TNF failure,Knee,Female,54,23.1,0.2,Biopsy,1,2,BRI-617,BRI_618,NA,2.2,4.3,250
+300-0418,43760,UC San Diego,Rheumatoid arthritis,Methotrexate failure,Knee,Male,55,57.8,0,Biopsy,0.67,1.67,BRI-619,BRI_620,NA,Unknown,Unknown,251
+300-0469,43762,Northwestern,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,58,29.5,4.3,Biopsy,Unknown,Unknown,BRI-621,BRI_622,NA,2,3.6,0
+300-1879,43762,UK Birmingham,Naive,Ongoing,Knee,Male,74,17.9,0,Biopsy,Unknown,Unknown,BRI-623,BRI_624,NA,3.3,5,251
+300-1880,43762,UK Birmingham,Naive,Ongoing,Knee,Female,27,36.9,0,Biopsy,1.67,2.33,BRI-625,BRI_626,NA,3.5,5.2,1
+300-0251V0,43766,University of Pittsburgh,Naive,Ongoing,Wrist,Male,36,60,0.1,Biopsy,Unknown,Unknown,BRI-627,BRI_628,NA,4.5,7.2,250
+300-0251F2,43766,University of Pittsburgh,Rheumatoid arthritis,Ongoing,Wrist,Male,36,21,Unknown,Biopsy,Unknown,Unknown,BRI-629,BRI_630,NA,4.5,7.2,250
+300-0462V0,43766,Northwestern,Rheumatoid arthritis,Methotrexate failure,Wrist,Female,24,41,2,Biopsy,Unknown,Unknown,BRI-631,BRI_632,NA,3.6,5.6,4.8
+300-0462F1,43766,Northwestern,Rheumatoid arthritis,Ongoing,Wrist,Female,24,37,Unknown,Biopsy,Unknown,Unknown,BRI-633R,BRI_634R,NA,3.6,5.6,4.8
+300-0464V0,43766,Northwestern,Rheumatoid arthritis,Methotrexate failure,Knee,Male,69,22,3.1,Biopsy,Unknown,Unknown,BRI-635,BRI_636,NA,0.8,2.5,0.5
+300-0464F1,43766,Northwestern,Rheumatoid arthritis,Ongoing,Knee,Male,69,7,Unknown,Biopsy,Unknown,Unknown,BRI-637R,BRI_638R,NA,0.8,2.5,0.5

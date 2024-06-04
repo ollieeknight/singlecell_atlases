@@ -1,81 +1,50 @@
 #!/bin/bash
 
 project_id='amp_zhang_2023'
-
-workingdir="$HOME/scratch/ngs/${project_id}"
-
+workingdir="${HOME}/scratch/ngs/${project_id}"
 libraries_dir="${workingdir}/scripts/libraries"
 
+# Remove the libraries directory if it exists, then recreate it
 if [ -d "$libraries_dir" ]; then
   rm -rf "$libraries_dir"
 fi
 
 mkdir -p "$libraries_dir"
 
-for library_directory in "$workingdir"/fastq/gex/*; do
-    gex_library=$(basename "$library_directory")
-    output_file="$libraries_dir/CITE_AMP_RA_${gex_library}.csv"
-
-    # Initialize donor_id_to_match
-    donor_id_to_match=""
-
-    # Find donor ID from gex library
-    while IFS=, read -r fastq_name syn_id visit donor_id library_id; do
-        # Skip the header line
-        if [[ "$fastq_name" == "fastq_name" ]]; then
-            continue
-        fi
-
-        if [[ "$library_id" == "$gex_library" ]]; then
-            donor_id_to_match="$donor_id"
-            visit_to_match=$visit
-            echo "Matching $donor_id_to_match visit $visit_to_match for $gex_library"
-            break
-        fi
-    done < "${workingdir}/scripts/fastq_gex_metadata.csv"
-
-    # Check if donor_id_to_match was found
-    if [[ -z "$donor_id_to_match" ]]; then
-        echo "No matching donor ID found for gex_library: $gex_library"
+# Read the AMP metadata CSV file
+while IFS=, read -r donor_id pipeline_date site disease treatment biopsied sex age CDAI disease_duration tissue_type krenn_lining krenn_inflammation GEX_library_number ADT_library_number ATAC_library_number DAS28_CRP DAS28_ESR CCP; do
+    # Skip the header line
+    if [[ "$donor_id" == "donor_id" ]]; then
+         continue
     fi
 
-    # Initialize adt_library
-    adt_library=""
+    output_file="$libraries_dir/CITE_AMP_RA_${GEX_library_number}.csv"
 
-    # Find library ID from donor ID in adt metadata
-    while IFS=, read -r fastq_name syn_id visit current_donor_id library_id; do
-        # Skip the header line
-        if [[ "$fastq_name" == "fastq_name" ]]; then
-            continue
-        fi
+    # Check if the GEX library directory exists
+    if [[ -d ${workingdir}/fastq/gex/${GEX_library_number} ]]; then
 
-        if [[ "$current_donor_id" == "$donor_id_to_match" && "$visit_to_match" == "$visit" ]]; then
-            adt_library="$library_id"
-            echo "For $donor_id_to_match visit $visit_to_match matched $gex_library to $adt_library with $visit"
-            break
-        fi
-    done < "${workingdir}/scripts/fastq_adt_metadata.csv"
-
-    # Check if adt_library was found
-    if [[ -z "$adt_library" ]]; then
-        echo "No matching library found in adt metadata for donor ID: $donor_id_to_match"
+        echo "Writing library file for donor $donor_id with ${GEX_library_number} and ${ADT_library_number}"
+        echo "GEX:"
+        ls ${workingdir}/fastq/gex/$GEX_library_number
+        echo "ADT:"
+        ls ${workingdir}/fastq/adt/$ADT_library_number
+        echo "---"
+        # Write the configuration to the output file
+        {
+            echo "[gene-expression]"
+            echo "reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc"
+            echo "create-bam,false"
+            echo "no-secondary,true"
+            echo "r1-length,26"
+            echo ""
+            echo "[feature]"
+            echo "reference,${workingdir}/scripts/AMP_ADT_list.csv"
+            echo "r1-length,26"
+            echo ""
+            echo "[libraries]"
+            echo "fastq_id,fastqs,feature_types"
+            echo "${GEX_library_number},${workingdir}/fastq/gex,Gene Expression"
+            echo "${ADT_library_number},${workingdir}/fastq/adt,Antibody Capture"
+        } > "$output_file"
     fi
-
-    {
-        echo "[gene-expression]"
-        echo "reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc"
-        echo "create-bam,false"
-        echo "no-secondary,true"
-        echo "r1-length,26"
-        echo ""
-        echo "[feature]"
-        echo "reference,${workingdir}/scripts/AMP_ADT_list.csv"
-        echo "r1-length,26"
-        echo ""
-        echo "[libraries]"
-        echo "fastq_id,fastqs,feature_types"
-        echo "${gex_library},/data/gpfs-1/scratch/users/knighto_c/ngs/amp_zhang_2023/fastq/gex,Gene Expression"
-        echo "${adt_library},/data/gpfs-1/scratch/users/knighto_c/ngs/amp_zhang_2023/fastq/adt,Antibody Capture"
-    } > "$output_file"
-done
-
+done < "${workingdir}/scripts/AMP_RA_metadata.csv"

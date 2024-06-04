@@ -10,5 +10,5 @@ r1-length,26
 
 [libraries]
 fastq_id,fastqs,feature_types
-BRI-460,/data/gpfs-1/scratch/users/knighto_c/ngs/amp_zhang_2023/fastq/gex,Gene Expression
-BRI_461,/data/gpfs-1/scratch/users/knighto_c/ngs/amp_zhang_2023/fastq/adt,Antibody Capture
+BRI-460,/data/gpfs-1/users/knighto_c/scratch/ngs/amp_zhang_2023/fastq/gex,Gene Expression
+BRI_461,/data/gpfs-1/users/knighto_c/scratch/ngs/amp_zhang_2023/fastq/adt,Antibody Capture

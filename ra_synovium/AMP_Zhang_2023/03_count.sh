@@ -6,12 +6,14 @@ workingdir="$HOME/scratch/ngs/${project_id}"
 mkdir -p "${workingdir}/outs/logs/"
 cd "${workingdir}/outs"
 
+job_list=$(sacct --format="JobName%30" | awk 'NR>2')
+
 for library_csv in "${workingdir}/scripts/libraries/"*; do
     library_id=$(basename "${library_csv%.*}")
     if [ ! -d "${workingdir}/outs/${library_id}/outs" ]; then
-        echo "Submitting cellranger multi count for ${library_id}"
+#        existing_job=$(echo "$job_list" | grep -w "$library_id")
 
-        job_id=$(sbatch <<EOF
+            job_id=$(sbatch <<EOF
 #!/bin/bash
 #SBATCH --job-name=${library_id}
 #SBATCH --output="${workingdir}/outs/logs/${library_id}_cellranger.out"
@@ -26,11 +28,13 @@ cd "${workingdir}/outs/"
 apptainer run -B /fast,/data "\$container" cellranger multi --id "${library_id}" --csv "${library_csv}" --localcores "\$num_cores"
 rm -r "${workingdir}/outs/${library_id}/SC_MULTI_CS" "${workingdir}/outs/${library_id}/_"*
 EOF
-        )
+            )
 
-        job_id=$(echo $job_id | awk '{print $4}')
+            job_id=$(echo $job_id | awk '{print $4}')
 
-        sbatch --dependency=afterok:$job_id <<EOF
+            echo "Submitting cellbender for ${library_id}"
+
+            sbatch --dependency=afterok:$job_id <<EOF
 #!/bin/bash
 #SBATCH --job-name=${library_id}_cellbender
 #SBATCH --output="${workingdir}/outs/logs/${library_id}_cellbender.out"
