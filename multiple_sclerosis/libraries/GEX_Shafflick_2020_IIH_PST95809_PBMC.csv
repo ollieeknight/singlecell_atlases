@@ -1,0 +1,7 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,false
+
+[libraries]
+fastq_id,fastqs,feature_types
+bamtofastq,/data/gpfs-1/users/knighto_c/scratch/ngs/schafflick_2020/fastq/GEX_Shafflick_2020_IIH_PST95809_PBMC/PST95809_PBMC_2_0_MissingLibrary_1_H5C3NBGX2,Gene Expression
