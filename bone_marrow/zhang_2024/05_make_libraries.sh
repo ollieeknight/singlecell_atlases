@@ -1,6 +1,10 @@
 #!/bin/bash
 
-libraries=$HOME/scratch/ngs/BMMC/BMMC_scripts/libraries
+project_id="zhang_2024"
+
+workingdir="$HOME/scratch/ngs/${project_id}"
+
+libraries=${workingdir}/scripts/libraries
 
 if [ -d "${libraries}" ]; then
     rm -r $libraries
@@ -41,7 +45,7 @@ while IFS=',' read -r SRR GSM sample_name modality chemistry lane ethnicity muta
         echo "create-bam,true" >> "${library_output}"
         echo "" >> "${library_output}"
         echo "[feature]" >> "${library_output}"
-        echo "reference,$HOME/scratch/ngs/BMMC/BMMC_scripts/full_ADT_list.csv" >> "${library_output}"
+        echo "reference,${workingdir}/scripts/full_ADT_list.csv" >> "${library_output}"
         echo "" >> "${library_output}"
 
         # Write the header to the CSV file
@@ -49,7 +53,7 @@ while IFS=',' read -r SRR GSM sample_name modality chemistry lane ethnicity muta
         echo "fastq_id,fastqs,feature_types" >> "${library_output}"
     fi
 
-    matching_fastq_files=($(find "${HOME}/scratch/ngs/BMMC/BMMC_fastq/" -type f -name "${sample_name}*.fastq.gz"))
+    matching_fastq_files=($(find "${workingdir}/fastq/" -type f -name "${sample_name}*.fastq.gz"))
 
     # Iterate over each matching FASTQ file
     for fastq_file in "${matching_fastq_files[@]}"; do
@@ -65,4 +69,4 @@ while IFS=',' read -r SRR GSM sample_name modality chemistry lane ethnicity muta
         fi
     done
 
-done < ${HOME}/scratch/ngs/BMMC/BMMC_scripts/zhang_2024_metadata.csv
+done < ${workingdir}/scripts/zhang_2024_metadata.csv

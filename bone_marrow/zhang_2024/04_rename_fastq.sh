@@ -1,6 +1,10 @@
 #!/bin/bash
 
-cd ${HOME}/scratch/ngs/BMMC/BMMC_fastq/
+project_id="zhang_2024"
+
+workingdir="$HOME/scratch/ngs/${project_id}"
+
+cd ${workingdir}/fastq
 
 for file in *_1.fastq.gz; do
     sample="${file%_1.fastq.gz}"
@@ -10,7 +14,7 @@ for file in *_1.fastq.gz; do
         if [[ "${sample}" == "$SRR" ]]; then
             break
         fi
-    done < "$HOME/scratch/ngs/BMMC/BMMC_scripts/zhang_2024_metadata.csv"
+    done < "${workingdir}/scripts/zhang_2024_metadata.csv"
 
     if [[ -z "$SRR" ]]; then
         echo "ERROR: No match found for ${sample##*/}"
@@ -45,4 +49,3 @@ for file in *_1.fastq.gz; do
             mv "${SRR}_4.fastq.gz" "${sample_name}_S1_L0${lane}_R2_001.fastq.gz"
     esac
 done
-

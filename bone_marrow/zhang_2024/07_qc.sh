@@ -1,16 +1,18 @@
 #!/bin/bash
 
-project_dir="$HOME/scratch/ngs/BMMC"
+project_id="zhang_2024"
 
-mkdir -p "${project_dir}/BMMC_outs/logs/"
-cd "${project_dir}/BMMC_outs"
+workingdir="$HOME/scratch/ngs/${project_id}"
 
-for library_csv in "${project_dir}/BMMC_scripts/libraries/"*; do
+mkdir -p "${workingdir}/outs/logs/"
+cd "${workingdir}/outs"
+
+for library_csv in "${workingdir}/scripts/libraries/"*; do
     library_id=$(basename "${library_csv%.*}")
-    output_file="${project_dir}/BMMC_outs/${library_id}/cellbender/output_posterior.h5"
+    output_file="${workingdir}/outs/${library_id}/cellbender/output_posterior.h5"
 
     # Check if the $library_id/outs directory exists
-    if [ ! -d "${project_dir}/BMMC_outs/${library_id}/outs" ]; then
+    if [ ! -d "${workingdir}/outs/${library_id}/outs" ]; then
         echo "Directory ${library_id}/outs does not exist, skipping"
         continue
     fi
@@ -26,18 +28,18 @@ for library_csv in "${project_dir}/BMMC_scripts/libraries/"*; do
     sbatch <<EOF
 #!/bin/bash
 #SBATCH --job-name ${library_id}
-#SBATCH --output "${project_dir}/BMMC_outs/logs/${library_id}_cellbender.out"
-#SBATCH --error "${project_dir}/BMMC_outs/logs/${library_id}_cellbender.out"
+#SBATCH --output "${workingdir}/outs/logs/${library_id}_cellbender.out"
+#SBATCH --error "${workingdir}/outs/logs/${library_id}_cellbender.out"
 #SBATCH --ntasks 1
 #SBATCH --partition "gpu"
 #SBATCH --gres gpu:1
 #SBATCH --cpus-per-task 16
 #SBATCH --mem 200000
 #SBATCH --time 24:00:00
-cd "${project_dir}/BMMC_outs/${library_id}"
+cd "${workingdir}/outs/${library_id}"
 mkdir -p cellbender
 container="/fast/scratch/users/knighto_c/tmp/oscar-qc_latest.sif"
-apptainer run --nv -B /fast "\$container" cellbender remove-background --cuda --input outs/multi/count/raw_feature_bc_matrix.h5 --output cellbender/output.h5
+apptainer run --nv -B /fast,/data "\$container" cellbender remove-background --cuda --input outs/multi/count/raw_feature_bc_matrix.h5 --output cellbender/output.h5
 rm ckpt.tar.gz
 EOF
 done
