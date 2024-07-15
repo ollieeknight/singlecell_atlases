@@ -1,0 +1,13 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,true
+chemistry,ARC-v1
+
+[libraries]
+fastq_id,fastqs,feature_types
+Multiome_P1609_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988779,Gene Expression
+Multiome_P1609_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988780,Gene Expression
+Multiome_P1609_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988781,Gene Expression
+Multiome_P1609_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988782,Gene Expression
+Multiome_P1609_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988783,Gene Expression
+Multiome_P1609_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988784,Gene Expression

@@ -1,0 +1,16 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,true
+chemistry,ARC-v1
+
+[libraries]
+fastq_id,fastqs,feature_types
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988785,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988786,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988787,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988788,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988789,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988790,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988791,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988792,Gene Expression
+Multiome_P1611_RA_ST_Knee_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/weinand_2024/fastq/SRR27988793,Gene Expression

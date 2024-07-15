@@ -1,0 +1,17 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,true
+chemistry,SC5P-R2
+
+[vdj]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-IMGT-VDJ-2024
+
+[feature]
+reference,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/scripts/yi_2023_ADT.csv
+
+[libraries]
+fastq_id,fastqs,feature_types
+CITE_Yi_2023_lib1_PBMC_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105509,Gene Expression
+CITE_Yi_2023_lib1_PBMC_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105510,Gene Expression
+CITE_Yi_2023_lib1_PBMC_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105504,VDJ-T
+CITE_Yi_2023_lib1_PBMC_ADT,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105380,Antibody Capture

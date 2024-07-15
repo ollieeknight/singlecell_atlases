@@ -1,0 +1,21 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,true
+chemistry,SC5P-R2
+
+[vdj]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-IMGT-VDJ-2024
+
+[feature]
+reference,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/scripts/yi_2023_ADT.csv
+
+[libraries]
+fastq_id,fastqs,feature_types
+CITE_Yi_2023_lib4_Paired_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105498,Gene Expression
+CITE_Yi_2023_lib4_Paired_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105499,Gene Expression
+CITE_Yi_2023_lib4_Paired_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105500,Gene Expression
+CITE_Yi_2023_lib4_Paired_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105501,Gene Expression
+CITE_Yi_2023_lib4_Paired_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105482,VDJ-T
+CITE_Yi_2023_lib4_Paired_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105483,VDJ-T
+CITE_Yi_2023_lib4_Paired_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105484,VDJ-T
+CITE_Yi_2023_lib4_Paired_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105485,VDJ-T

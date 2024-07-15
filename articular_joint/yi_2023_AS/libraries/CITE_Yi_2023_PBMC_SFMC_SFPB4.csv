@@ -1,0 +1,21 @@
+[gene-expression]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,true
+chemistry,SC5P-R2
+
+[vdj]
+reference,/fast/work/groups/ag_romagnani/ref/hs/GRCh38-IMGT-VDJ-2024
+
+[feature]
+reference,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/scripts/yi_2023_ADT.csv
+
+[libraries]
+fastq_id,fastqs,feature_types
+CITE_Yi_2023_PBMC_SFMC_SFPB4_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105486,Gene Expression
+CITE_Yi_2023_PBMC_SFMC_SFPB4_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105487,Gene Expression
+CITE_Yi_2023_PBMC_SFMC_SFPB4_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105488,Gene Expression
+CITE_Yi_2023_PBMC_SFMC_SFPB4_GEX,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105489,Gene Expression
+CITE_Yi_2023_PBMC_SFMC_SFPB4_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105470,VDJ-T
+CITE_Yi_2023_PBMC_SFMC_SFPB4_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105471,VDJ-T
+CITE_Yi_2023_PBMC_SFMC_SFPB4_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105472,VDJ-T
+CITE_Yi_2023_PBMC_SFMC_SFPB4_VDJ-T,/data/gpfs-1/users/knighto_c/scratch/ngs/yi_2023/fastq/SRR22105473,VDJ-T
