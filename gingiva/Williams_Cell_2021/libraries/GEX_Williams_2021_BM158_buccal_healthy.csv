@@ -1,0 +1,8 @@
+[gene-expression]
+reference,/data/cephfs-2/unmirrored/groups/romagnani/work/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,false
+no-secondary,true
+
+[libraries]
+fastq_id,fastqs,feature_types
+BM158_buccal_healthy,/data/cephfs-1/home/users/knighto_c/scratch/ngs/williams_2021/fastq,Gene Expression

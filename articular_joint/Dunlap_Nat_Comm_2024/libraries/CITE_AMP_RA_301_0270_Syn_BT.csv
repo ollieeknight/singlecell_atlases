@@ -1,0 +1,12 @@
+[gene-expression]
+reference,/data/cephfs-2/unmirrored/groups/romagnani/work/ref/hs/GRCh38-hardmasked-optimised-arc
+create-bam,false
+no-secondary,true
+
+[feature]
+reference,/data/cephfs-1/scratch/groups/romagnani/users/knighto_c/ngs/ra/scripts/AMP_ADT_list.csv
+
+[libraries]
+fastq_id,fastqs,feature_types
+301_0270_Syn_BT_5,/data/cephfs-1/scratch/groups/romagnani/users/knighto_c/ngs/ra/fastq,Gene Expression
+301_0270_Syn_BT_FB,/data/cephfs-1/scratch/groups/romagnani/users/knighto_c/ngs/ra/fastq,Antibody Capture
